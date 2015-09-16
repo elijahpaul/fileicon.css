@@ -14,7 +14,7 @@ See the [DEMO]
 
 Will display:
 
-![doc](https://cloud.githubusercontent.com/assets/119550/5550524/583be08c-8be2-11e4-99a3-d7e9f24b1db3.jpg)
+![doc](https://dl.kraken.io/web/55/23d2ac7012d4820d049febc3879424/pdf2.png)
 
 ## Type
 
@@ -29,7 +29,7 @@ Use attribute `data-type` to define the file type, We had already defined some f
 ## Size
 
 Use class `file-icon-xx` for size define, We support some size below:
- 
+
 - xs  (12x16)
 - sm  (18x24)
 - default (24x32)

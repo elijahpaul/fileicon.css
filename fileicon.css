@@ -3,14 +3,14 @@
 /* fileicon.basic */
 .file-icon {
   font-family: Arial, Tahoma, sans-serif;
-  font-weight: 300;
+  font-weight: 800;
   display: block;
   width: 24px;
   height: 32px;
   background: #018FEF;
   position: relative;
   border-radius: 2px;
-  text-align: left;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
 }
 .file-icon::before {
@@ -24,17 +24,17 @@
   border-bottom-left-radius: 2px;
   border-width: 5px;
   border-style: solid;
-  border-color: #FFF #FFF rgba(255,255,255,.35) rgba(255,255,255,.35);
+  border-color: #FFF #FFF rgba(100,100,100,.35) rgba(100,100,100,.35);
 }
 .file-icon::after {
   display: block;
-  content: attr(data-type);
+  content: '.' attr(data-type);
   position: absolute;
-  bottom: 0;
+  bottom: 7px;
   left: 0;
-  font-size: 10px;
+  font-size: 7px;
   color: #fff;
-  text-transform: lowercase;
+  text-transform: uppercase;
   width: 100%;
   padding: 2px;
   white-space: nowrap;
@@ -56,7 +56,7 @@
   width: auto;
   left: 2px;
   right: 2px;
-  bottom: 3px;
+  bottom: 5px;
 }
 .file-icon-sm {
   width: 18px;
@@ -74,28 +74,30 @@
 .file-icon-lg {
   width: 48px;
   height: 64px;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .file-icon-lg::before {
-  border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 3px;
   border-width: 8px;
 }
 .file-icon-lg::after {
-  font-size: 16px;
+  font-size: 13px;
   padding: 4px 6px;
+  bottom: 17px;
 }
 .file-icon-xl {
   width: 96px;
   height: 128px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 .file-icon-xl::before {
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 6px;
   border-width: 16px;
 }
 .file-icon-xl::after {
   font-size: 24px;
   padding: 4px 10px;
+  bottom: 38px;
 }
 /* fileicon.types */
 .file-icon[data-type=zip],
@@ -103,16 +105,16 @@
   background: #ACACAC;
 }
 .file-icon[data-type^=doc] {
-  background: #307CF1;
+  background: #AFC1E3;
 }
 .file-icon[data-type^=xls] {
-  background: #0F9D58;
+  background: #94C341;
 }
 .file-icon[data-type^=ppt] {
   background: #D24726;
 }
 .file-icon[data-type=pdf] {
-  background: #E13D34;
+  background: #F15D46;
 }
 .file-icon[data-type=txt] {
   background: #5EB533;
@@ -121,7 +123,7 @@
 .file-icon[data-type=wma],
 .file-icon[data-type=m4a],
 .file-icon[data-type=flac] {
-  background: #8E44AD;
+  background: #7B78A7;
 }
 .file-icon[data-type=mp4],
 .file-icon[data-type=wmv],
@@ -135,5 +137,5 @@
 .file-icon[data-type=jpeg],
 .file-icon[data-type=gif],
 .file-icon[data-type=png] {
-  background: #F4B400;
+  background: #FFD248;
 }
